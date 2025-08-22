@@ -1,5 +1,8 @@
 
 from flask import Flask
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from controllers.band_controller import band_bp
 from config.database import engine
 from models.band import Base
